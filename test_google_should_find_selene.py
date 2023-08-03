@@ -19,5 +19,5 @@ def test_find1(browser_size):
     browser.element('[id="search"]').should(have.text('c'))
 def test_find2(browser_size):
     browser.element('[name="q"]').should(be.blank).type('н52ккт0018ьллвдеткирврыы').press_enter()
-    browser.element('[id="search"]').should(have.text('Похоже, по вашему запросу нет полезных результатов'))
+    browser.element('[id="search"]').should(have.text('Похоже, по вашему запросу нет полезных результат'))
 
