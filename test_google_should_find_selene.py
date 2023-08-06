@@ -16,7 +16,7 @@ def browser_size():
 def test_find(browser_size):
     browser.open('https://google.com')
     browser.element('[name="q"]').should(be.blank).type('yashaka/selene').press_enter()
-    browser.element('[id="search"]').should(have.text('c'))
+    browser.element('[id="search"]').should(have.text('User-oriented Web UI browser tests in Python'))
 
 
 def test_not_find1(browser_size):
